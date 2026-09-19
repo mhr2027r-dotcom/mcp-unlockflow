@@ -1,0 +1,41 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.capitalflowdesk/mcp-unlockflow",
+  "title": "Capital Flow Desk UnlockFlow",
+  "description": "Thin stdio MCP exposing UnlockFlowEvent v1 sample tools (list / get / schema) for directory listing readiness. Illustrative local seeds only — research framing, NFA. Not a live authenticated Agent Feed.",
+  "version": "0.1.0",
+  "websiteUrl": "https://t.me/CapitalFlowDeskBot",
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "@capitalflowdesk/mcp-unlockflow",
+      "version": "0.1.0",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ],
+  "_meta": {
+    "io.modelcontextprotocol.registry/publisher-provided": {
+      "status": "draft-do-not-publish",
+      "product": "CFD Agent Feed — UnlockFlowEvent v1",
+      "tools": [
+        "list_unlock_events",
+        "get_unlock_event",
+        "get_schema"
+      ],
+      "pricing_draft_usdt": {
+        "starter": 99,
+        "pro": 299
+      },
+      "cta": {
+        "bot": "@CapitalFlowDeskBot",
+        "admin": "@Mohammad_GNA"
+      },
+      "disclaimer": "NFA",
+      "notes": "Draft metadata for Official MCP Registry readiness only. Do not publish until package namespace ownership and live feed credentials are ready. Local seeds are illustrative:true."
+    }
+  }
+}

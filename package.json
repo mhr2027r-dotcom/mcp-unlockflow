@@ -1,0 +1,40 @@
+{
+  "name": "@capitalflowdesk/mcp-unlockflow",
+  "version": "0.1.0",
+  "description": "Capital Flow Desk thin MCP \u2014 UnlockFlowEvent v1 tools (illustrative seeds, NFA)",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "mcp:stdio": "tsx src/index.ts",
+    "smoke": "tsx scripts/smoke.ts"
+  },
+  "keywords": [
+    "mcp",
+    "unlockflow",
+    "capital-flow-desk",
+    "unlock-flow-event"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "cfd-mcp-unlockflow": "src/index.ts"
+  },
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/PLACEHOLDER/mcp-unlockflow.git"
+  }
+}

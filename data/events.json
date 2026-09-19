@@ -1,0 +1,144 @@
+[
+  {
+    "event_id": "uf_20261005_ena_t30",
+    "schema_version": "1",
+    "asset": "ENA",
+    "asset_name": "Ethena",
+    "chain": "ethereum",
+    "contract_address": "0x57e114B691Db790C35207b2e685D4A43181e6061",
+    "unlock_ts": "2026-10-05T12:00:00+04:00",
+    "horizon": "T-30",
+    "observed_at": "2026-09-19T16:00:00+04:00",
+    "update_freq": "daily",
+    "value_usd": 480000000,
+    "amount_tokens": 1406250000,
+    "pct_circulating": 14.3,
+    "vtmc": 8.5,
+    "float_depth_usd": null,
+    "allocation": [
+      {
+        "bucket": "investor",
+        "pct": 100,
+        "recipient_label": "original / lead investors (accelerated remaining schedule)",
+        "vesting_type": "cliff"
+      }
+    ],
+    "vesting_type": "cliff",
+    "precision_grade": "estimate",
+    "sell_pressure_score": 55,
+    "confidence": "low",
+    "cex_inflow_z": null,
+    "recipient_to_cex": null,
+    "pre_event_drift_note": "T−30 planning map only: date and investor cohort confirmed by project; size (~1.41B ENA / ~14.3% circ) is Tokenomist-class reconstruction — not an exact primary count. Behavior screens (CEX inflow z, recipient→CEX) not yet in; do not invent deposit evidence.",
+    "invalidation": "Project revises the 5 Oct acceleration date; primary disclosure shows investor amount materially reduced vs reconstruction; or vesting delay/cancellation past the stated window.",
+    "evidence": [
+      "Ethena ecosystem update: remaining original-investor unlocks accelerated; monthly investor schedule ends (CONFIRMED date/cohort)",
+      "Unlock size ~1.41B ENA (~14.3% circulating) labeled ESTIMATE — reconstructed from published vesting schedule, not stated as exact count in project announcement",
+      "Intraday release time not disclosed; unlock_ts noon Asia/Dubai is an illustrative working window only",
+      "value_usd / vtmc are illustrative observe-pricing placeholders — re-price at publish; float_depth left null (time-sensitive)",
+      "Team tokens remain on original vesting (project) — do not merge nearby core-contributor calendar rows without re-check"
+    ],
+    "sources": [
+      {
+        "name": "Ethena Ecosystem Update (primary)",
+        "url": "https://ethena.fi/blog/ethena-ecosystem-update",
+        "retrieved_at": "2026-09-19T12:00:00+04:00"
+      },
+      {
+        "name": "Tokenomist — Ethena unlock events (calendar / reconstruction)",
+        "url": "https://tokenomist.ai/ethena/unlock-events",
+        "retrieved_at": "2026-09-19T12:00:00+04:00"
+      },
+      {
+        "name": "Capital Flow Desk Issue #2 (human memo)",
+        "url": null,
+        "retrieved_at": "2026-09-19T16:00:00+04:00"
+      }
+    ],
+    "human_memo_ref": "issues/issue-02-ena-unlockflow.md",
+    "disclaimer": "NFA",
+    "webhook_topic": "cfd.unlock_flow.v1",
+    "admin_contact": {
+      "telegram": "@Mohammad_GNA",
+      "url": "https://t.me/Mohammad_GNA"
+    },
+    "illustrative": true
+  },
+  {
+    "event_id": "uf_20260920_zro_t48h",
+    "schema_version": "1",
+    "asset": "ZRO",
+    "asset_name": "LayerZero",
+    "chain": "ethereum",
+    "contract_address": "0x6985884C439ac4cD07B6982697233d0e5C1eDfC6",
+    "unlock_ts": "2026-09-20T12:00:00+04:00",
+    "horizon": "T-48h",
+    "observed_at": "2026-09-19T16:00:00+04:00",
+    "update_freq": "twice_daily",
+    "value_usd": 26400000,
+    "amount_tokens": 0,
+    "pct_circulating": 4.22,
+    "vtmc": 1.8,
+    "float_depth_usd": null,
+    "allocation": [
+      {
+        "bucket": "investor",
+        "pct": 40,
+        "recipient_label": "private investors (digest cohort — verify tranche)",
+        "vesting_type": "cliff"
+      },
+      {
+        "bucket": "team",
+        "pct": 35,
+        "recipient_label": "founder / team",
+        "vesting_type": "cliff"
+      },
+      {
+        "bucket": "community",
+        "pct": 25,
+        "recipient_label": "community / strategic partner vesting (recurring)",
+        "vesting_type": "mixed"
+      }
+    ],
+    "vesting_type": "cliff",
+    "precision_grade": "estimate",
+    "sell_pressure_score": 48,
+    "confidence": "low",
+    "cex_inflow_z": null,
+    "recipient_to_cex": null,
+    "pre_event_drift_note": "Illustrative T−48h seed from Tokenomist weekly digest (~$26.4M cliff, ~4.22% of unlocked supply at ~2026-09-13 prices). Allocation bucket mix is desk-illustrative from digest labels — confirm exact tranche (partners vs contributors) before live use. amount_tokens left 0 when digest did not publish a stable token count.",
+    "invalidation": "Tokenomist / primary vesting page revises notional sharply lower; unlock delayed past 20 Sep window; or labeled recipient wallets remain idle through T0 with no material multi-venue deposit evidence.",
+    "evidence": [
+      "Tokenomist Weekly Unlock Digest (Sep 14–20, 2026) spotlights $ZRO cliff on 2026-09-20 (~$26.4M, ~4.22% of unlocked supply) — ESTIMATE at digest pricing",
+      "pct_circulating field carries digest % of unlocked supply (not necessarily circulating) — labeled estimate; re-map before production",
+      "Allocation percentages are illustrative splits from digest recipient classes — not audited on-chain shares",
+      "Recurring strategic/partner vesting through ~Jun 2027 — this event is one cliff window, not the whole schedule",
+      "No live CEX inflow z or recipient_to_cex in this seed — leave null until public screens fill"
+    ],
+    "sources": [
+      {
+        "name": "Tokenomist Weekly Unlock Digest Sep 14–20, 2026",
+        "url": "https://tokenomist.ai/research/weekly-unlock-digest-sep-14-20-2026-unlocks-meet-an-87-hike-probability-2",
+        "retrieved_at": "2026-09-19T12:00:00+04:00"
+      },
+      {
+        "name": "Tokenomist — LayerZero tokenomics / unlocks",
+        "url": "https://tokenomist.ai/layerzero/tokenomics",
+        "retrieved_at": "2026-09-19T12:00:00+04:00"
+      },
+      {
+        "name": "Capital Flow Desk research note (candidate)",
+        "url": null,
+        "retrieved_at": "2026-09-19T16:00:00+04:00"
+      }
+    ],
+    "human_memo_ref": "research/unlock-candidate-issue2.md",
+    "disclaimer": "NFA",
+    "webhook_topic": "cfd.unlock_flow.v1",
+    "admin_contact": {
+      "telegram": "@Mohammad_GNA",
+      "url": "https://t.me/Mohammad_GNA"
+    },
+    "illustrative": true
+  }
+]

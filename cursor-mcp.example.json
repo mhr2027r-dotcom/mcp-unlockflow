@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "cfd-unlockflow": {
+      "command": "npx",
+      "args": ["tsx", "src/index.ts"],
+      "cwd": "/absolute/path/to/mcp-unlockflow"
+    }
+  }
+}
