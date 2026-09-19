@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "cfd-unlockflow": {
+      "command": "npx",
+      "args": ["-y", "tsx", "src/index.ts"]
+    }
+  }
+}

@@ -55,19 +55,35 @@ npm start
 
 ### Cursor / Claude Desktop style config
 
+Repo-root **`.mcp.json`** (Open Plugins / [cursor.directory](https://cursor.directory/plugins/new) auto-detect):
+
 ```json
 {
   "mcpServers": {
     "cfd-unlockflow": {
       "command": "npx",
-      "args": ["tsx", "src/index.ts"],
-      "cwd": "/workspace/crypto-research-desk/mcp-unlockflow"
+      "args": ["-y", "tsx", "src/index.ts"]
     }
   }
 }
 ```
 
-Or after `npm install`:
+Paste the same block into Cursor **Settings → MCP** / Claude Desktop `mcpServers`, or clone this repo and point the host at it.
+
+After npm publish (`@capitalflowdesk/mcp-unlockflow`):
+
+```json
+{
+  "mcpServers": {
+    "cfd-unlockflow": {
+      "command": "npx",
+      "args": ["-y", "@capitalflowdesk/mcp-unlockflow"]
+    }
+  }
+}
+```
+
+Or after local `npm install`:
 
 ```bash
 npm run start
@@ -105,16 +121,19 @@ Human Telegram membership is a **separate** SKU — do **not** paste Members inv
 
 ```text
 mcp-unlockflow/
+  .mcp.json            # cursor.directory / Open Plugins auto-detect
   README.md
   package.json
-  server.json          # registry draft — do not publish
+  server.json          # registry draft — do not publish until intentional
+  bin/cfd-mcp-unlockflow.js
   src/index.ts         # stdio MCP
+  scripts/publish-npm.sh
   data/
     events.json        # ENA + ZRO illustrative seeds
     unlock-flow-event.schema.json
 ```
 
-Deps: `@modelcontextprotocol/server`, `zod` (+ `tsx` to run TypeScript).
+Deps: `@modelcontextprotocol/sdk`, `zod`, `tsx`.
 
 ---
 
@@ -128,21 +147,38 @@ cd mcp-unlockflow && npx tsx scripts/smoke.ts
 ```
 Expect `SMOKE_PASS` and tools: `list_unlock_events`, `get_unlock_event`, `get_schema`.
 
-## Install (Cursor / Claude Desktop)
+## Install (Cursor / Claude Desktop / cursor.directory)
+
+1. **cursor.directory** — open https://cursor.directory/plugins/new → paste  
+   `https://github.com/mhr2027r-dotcom/mcp-unlockflow`  
+   Auto-detect uses repo-root **`.mcp.json`**.
+2. **Manual host config** (same payload as `.mcp.json`):
 
 ```json
 {
   "mcpServers": {
     "cfd-unlockflow": {
       "command": "npx",
-      "args": ["-y", "tsx", "src/index.ts"],
-      "cwd": "/path/to/mcp-unlockflow"
+      "args": ["-y", "tsx", "src/index.ts"]
     }
   }
 }
 ```
 
-Or clone: `git clone https://github.com/mhr2027r-dotcom/mcp-unlockflow.git`
+Run from a clone of this repo (host cwd = repo root), or after publish:
+
+```json
+{
+  "mcpServers": {
+    "cfd-unlockflow": {
+      "command": "npx",
+      "args": ["-y", "@capitalflowdesk/mcp-unlockflow"]
+    }
+  }
+}
+```
+
+Clone: `git clone https://github.com/mhr2027r-dotcom/mcp-unlockflow.git`
 
 ## Live Agent Feed (paid)
 
