@@ -127,3 +127,27 @@ Deps: `@modelcontextprotocol/server`, `zod` (+ `tsx` to run TypeScript).
 cd mcp-unlockflow && npx tsx scripts/smoke.ts
 ```
 Expect `SMOKE_PASS` and tools: `list_unlock_events`, `get_unlock_event`, `get_schema`.
+
+## Install (Cursor / Claude Desktop)
+
+```json
+{
+  "mcpServers": {
+    "cfd-unlockflow": {
+      "command": "npx",
+      "args": ["-y", "tsx", "src/index.ts"],
+      "cwd": "/path/to/mcp-unlockflow"
+    }
+  }
+}
+```
+
+Or clone: `git clone https://github.com/mhr2027r-dotcom/mcp-unlockflow.git`
+
+## Live Agent Feed (paid)
+
+Illustrative seeds only in this repo. Live UnlockFlow feed after USDT TRC-20 onboard:
+- Starter **99** / Pro **299** USDT · @CapitalFlowDeskBot · @Mohammad_GNA
+- Free notes: https://t.me/CapitalFlowDeskHQ
+
+NFA.
