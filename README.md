@@ -107,7 +107,7 @@ npx @modelcontextprotocol/inspector npx tsx src/index.ts
 Settlement: USDT **TRC-20** · wallet in `../PRODUCTS.md`  
 **Onboard:** [@CapitalFlowDeskBot](https://t.me/CapitalFlowDeskBot) or [@Mohammad_GNA](https://t.me/Mohammad_GNA) — subject **Agent Feed / UnlockFlowEvent**.
 
-**Optional Tip Jar:** If this MCP work is useful, [leave a Telegram Stars tip](https://mhr2027r-dotcom.github.io/capital-flow-desk-web/tip-jar/) or [open the bot Tip Jar](https://t.me/CapitalFlowDeskBot?start=tip). Tips are gratitude only; they never unlock Members or Agent Feed access. **NFA.**
+**Optional Tip Jar:** If this MCP work is useful, [leave a Telegram Stars tip](https://mhr2027r-dotcom.github.io/capital-flow-desk-web/tip/) or [open the bot Tip Jar](https://t.me/CapitalFlowDeskBot?start=tip). Tips are gratitude only; they never unlock Members or Agent Feed access. **NFA.**
 
 Human Telegram membership is a **separate** SKU — do **not** paste Members invite links here.
 
